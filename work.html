@@ -1,0 +1,140 @@
+```html
+<!DOCTYPE HTML>
+<!--
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Resume</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Header -->
+            <header id="header">
+                <a href="index.html" class="logo">Portfolio</a>
+            </header>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul class="links">
+                    <li><a href="index.html">Projects</a></li>
+                    <li class="active"><a href="work.html">RESUME</a></li>
+                </ul>
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/krishnaveni-katta" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
+                    <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                </ul>
+            </nav>
+
+            <!-- Main -->
+            <div id="main">
+
+                <!-- Post -->
+                <section style="background-color: #f2f2f2; padding: 30px;padding-top:50px ;padding-bottom: 10px;">
+                    <h2 style="color: #333;">Education</h2>
+                    <ul class="education" style="list-style-type: none; background-color: #fff; margin-bottom: 10px; padding: 10px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                        <li style="list-style-type: none;">
+                            <h3 class="job-title" style="margin: 0 0 0 10px;padding:10px;">Master of Science in Data Science, Specialization in Computer Science</h3>
+                            <span class="company-name" style="padding:20px">University of Houston Houston, TX</span> - <span class="dates" style="padding:10px">Aug 2021 - Dec 2022</span> - <span class="gpa" style="padding:10px">Cumulative GPA: 3.6/4.0</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section style="background-color: #f2f2f2; padding: 20px;padding-bottom: 10px;">
+                    <h2 style="color: #333;padding:10px">Work Experience</h2>
+                    <ul class="work-experience">
+                        <li style="list-style-type: none; background-color: #fff; margin-bottom: 10px; padding: 10px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                            <div style="display: flex; align-items: center;padding:20px">
+                                <img class="company-logo" src="images/fsulogo.png" alt="Florida State ODL" width="10%" height="10%">
+                                <br>
+                                <h3 class="job-title" style="margin: 0 0 0 10px;">Data Science Analyst/Government Consultant I</h3>
+                            </div>
+                            <b><span class="company-name" style="padding:20px">Florida Department of Elder Affairs Tallahassee, FL</span> <span class="dates">Apr 2023 - Current</span></b>
+                            <p class="job-description">
+                                <ul>
+                                    <li>Developed and optimized complex SQL queries and stored procedures using SSMS, SSRS and Python for analyzing a database with over 8 million records resulting in a 30% improvement in query performance.</li>
+                                    <li>Created interactive and visually appealing reports using SSRS, Tableau and Alteryx, designing over 70 comprehensive reports that provided actionable insights to stakeholders, leading to a 25% increase in data-driven decisions.</li>
+                                </ul>
+                            </p>
+                        </li>
+                        <li style="list-style-type: none; background-color: #fff; margin-bottom: 10px; padding: 10px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                            <div style="display: flex; align-items: center;padding:20px">
+                                <img class="company-logo" src="images/sflogo.png" alt="Salesforce Inc." width="10%" height="10%">
+                                <h3 class="job-title" style="margin: 0 0 0 10px;">Data Engineer Intern</h3>
+                            </div>
+                            <b><span class="company-name" style="padding:20px">Sira Consulting Houston, TX</span> <span class="dates">Jan 2023 - Mar 2023</span></b>
+                           
+
+ <p class="job-description">
+                                <ul>
+                                    <li>Conducted performance tuning and troubleshooting on SSIS package and SSRS reports, ensuring system stability. Reduced system downtimes by 60%, enhancing overall data pipeline’s reliability and report availability.</li>
+                                    <li>Devised a statistical methodology utilizing advanced SQL queries and Python to generate in-demand skills across diverse data metrics.</li>
+                                </ul>
+                            </p>
+                        </li>
+                        <!-- More Work Experience Items Here -->
+                    </ul>
+                </section>
+
+                <!-- More Sections Here -->
+
+            </div>  
+
+            <!-- Footer -->
+            <footer id="footer">
+                <section>
+                    <form id="sendMessageForm" onsubmit="return sendMessage()">
+                        <label for="name">Name:</label> 
+                        <input type="text" id="name" name="name" required>  
+                        <br>
+                        <label for="subject">Subject:</label> 
+                        <input type="text" id="subject" name="subject" required>  
+                        <br>
+                        <label for="message">Message:</label>  
+                        <textarea id="message" name="message" rows="4" required></textarea>   
+                        <br>
+                        <button type="submit">Contact Me</button> 
+                    </form>
+                    <script>
+                        function sendMessage() {
+                          // Get form data
+                          const recipient = 'harika.gamidi@gmail.com';
+                          const subject = document.getElementById('subject').value;
+                          const message = document.getElementById('message').value;
+                          // Create the email body
+                          const emailBody = `
+                            ${message}
+                          `;
+                          // Open the default mail client with the pre-filled email
+                          window.location.href = `mailto:${recipient}?subject=${subject}&body=${encodeURIComponent(emailBody)}`;
+                          // Prevent the form from submitting to the server
+                          return false;
+                        }
+                    </script>
+                </section>
+                <!-- Contact and other footer sections -->
+            </footer>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
+```
